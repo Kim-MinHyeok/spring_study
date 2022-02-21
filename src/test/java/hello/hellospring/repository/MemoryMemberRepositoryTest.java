@@ -48,7 +48,7 @@ public class MemoryMemberRepositoryTest {
     @Test
     public void findAll() {
         Member member1 = new Member();
-        member1.setName("spring2");
+        member1.setName("spring1");
         repository.save(member1);
 
         Member member2 = new Member();
@@ -60,4 +60,5 @@ public class MemoryMemberRepositoryTest {
         assertThat(result.size()).isEqualTo(2);
 
     }
+
 }
